@@ -12,6 +12,14 @@ public class Connexion {
 	private String port;
 	private Connection connection;
 	
+	
+	/**
+	 * 
+	 * @param user
+	 * @param password
+	 * @param address
+	 * @param port
+	 */
 	public Connexion(String user, String password, String address, String port) {
 		this.user = user;
 		this.password = password;

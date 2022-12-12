@@ -6,8 +6,10 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class Request {
+
+	private boolean baudouin = false;
 	
-	Connexion conn = new Connexion("system", "oracle", "172.17.0.3", "1521");
+	Connexion conn = baudouin ? new Connexion("system", "oracle", "127.0.0.1", "1521") : new Connexion("system", "oracle", "172.17.0.3", "1521");
 	Connection c = conn.getConnection();
 	
 	public void test() {

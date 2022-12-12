@@ -10,6 +10,10 @@ import database.Request;
 
 public class Main {
 	
+	/**
+	 * 
+	 * @param args Method de lancement
+	 */
 	public static void main(String[] args) {
 		Request request = new Request();
 		request.test();
